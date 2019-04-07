@@ -23,7 +23,7 @@ function currentLine(queue) {
     var cLine = "The line is currently:";
     var i = 0;
     while (queue[i]) {
-      var app = " " + i +". " + queue[i] + ",";
+      var app = " " + (i+1) +". " + queue[i] + ",";
       cLine = cLine + app;
       i++
     }
