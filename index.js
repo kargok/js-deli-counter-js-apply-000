@@ -15,7 +15,7 @@ function nowServing(queue) {
 }
 
 function currentLine(queue) {
-  if (queue.length === 1) {
+  if (queue.length === 0) {
     const emptyQ = "The line is currently empty.";
     return emptyQ;
   }
