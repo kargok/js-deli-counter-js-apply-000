@@ -1,7 +1,7 @@
 function takeANumber(queue,name) {
   queue.push(name);
   var msg = "Welcome, " + name + ". You are number " + queue.length + " in line.";
-  console.log(msg);
+  return msg;
 }
 
 function nowServing(queue) {
