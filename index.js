@@ -21,6 +21,7 @@ function currentLine(queue) {
   }
   else {
     var cLine = "The line is currently:";
+    var i = 0;
     while (queue[i]) {
       var app = " " + i +". " + queue[i] + ",";
       cLine = cLine + app;
