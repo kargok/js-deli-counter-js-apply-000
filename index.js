@@ -5,7 +5,7 @@ function takeANumber(queue,name) {
 }
 
 function nowServing(queue) {
-  if (queue.length === 1) {
+  if (queue.length === 0) {
     const emptyQ = "There is nobody waiting to be served!";
     return emptyQ;
   }
@@ -15,7 +15,6 @@ function nowServing(queue) {
 }
 
 function currentLine(queue) {
-  var i = 0;
   if (queue.length === 1) {
     const emptyQ = "The line is currently empty.";
     return emptyQ;
@@ -25,6 +24,7 @@ function currentLine(queue) {
     while (queue[i]) {
       var app = " " + i +". " + queue[i] + ",";
       cLine = cLine + app;
+      i++
     }
     cLine = cLine.substring(0, cLine.length-1);
     return cLine;
