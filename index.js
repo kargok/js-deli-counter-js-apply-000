@@ -10,7 +10,7 @@ function nowServing(queue) {
     return emptyQ;
   }
   else {
-    return "Currently serving " + queue.shift();
+    return "Currently serving " + queue.shift() + ".";
   }
 }
 
